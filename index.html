@@ -13,8 +13,10 @@
     <div class="big-wrapper">
         <!-- * HEADER -->
         <header class="page-header">
-            <img class="page-header_logo" src="" alt="logo">
-            <h1 class="page-header_title">The Yalow</h1>
+            <div class="wrapper-logo">
+                <img class="page-header__logo" src="./assets/img/logo-full.svg" width="83" height="83" alt="logo">
+                <h1 class="page-header__title">The Yalow</h1>
+            </div>
             <nav class="nav">
                 <!-- ? делать на флексах -->
                 <ul class="nav__list">
@@ -36,9 +38,11 @@
             <!-- * commercial -->
             <section class="commercial">
                 <h2 class="visually-hidden">Commercial video about The Yelow company</h2>
-                <video class="commercial_video" src=""></video>
-                <span>The cool</span>
-                <span>The minimal</span>
+                <video class="commercial_video" src="#"  poster="./assets/img/video-parrots-desktop.png" controls></video>
+                <div class="wrapper-commercial">
+                    <span class="commercial__text commercial__text--cool">The cool</span>
+                    <span class="commercial__text commercial__text--minimal">The minimal</span>
+                </div>
             </section>
 
             <!-- * advantages -->
