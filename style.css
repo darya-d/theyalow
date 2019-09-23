@@ -225,10 +225,7 @@ body {
 }
 
 a {
-    font-weight: bold;
     text-decoration: none;
-
-    color: #dbdbd7;
 }
 
 .visually-hidden {
@@ -245,4 +242,67 @@ a {
     clip-path: inset(100%);
     clip: rect(0, 0, 0, 0);
     overflow: hidden;
+}
+
+.big-wrapper {
+    width: 1020px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+.wrapper-logo {
+    display: flex;
+}
+
+.page-header {
+    background-image: url("./assets/img/layout-header-desktop.png");
+    min-height: 566px;
+}
+
+.page-header__title {
+    font-family: "Lucida Sans";
+    font-size: 41px;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 0.41px;
+
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.42);
+    color: #ffffff;
+}
+
+.nav {
+    margin-right: 150px;
+}
+
+.nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 453px;
+    min-height: 41px;
+    background-color: #f5c506;
+}
+
+.nav__item {
+    margin-right: 30px;
+
+    font-size: 17px;
+    font-weight: 400;
+    font-family: "Segoe WP";
+    text-transform: uppercase;
+    letter-spacing: 0.17px;
+}
+
+.nav__link {
+    color: #9b7d08;
+}
+
+.nav__link:hover {
+    color: #685406;
+}
+
+.nav__link:active {
+    opacity: 0.5;
 }
