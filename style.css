@@ -249,7 +249,7 @@ a {
     margin: 0 auto;
 }
 
-/* HEADER */
+/* * HEADER */
 .wrapper-logo {
     display: flex;
 }
@@ -305,4 +305,33 @@ a {
 
 .nav__link:active {
     opacity: 0.5;
+}
+
+/* * COMMERCIAL */
+.commercial {
+    border: 1px solid red;
+}
+
+.wrapper-commercial {
+    border: 1px solid green;
+
+    width: 400px;
+    text-align: center; 
+}
+
+.commercial__text {
+    font-size: 63px;
+    font-weight: 400;
+    font-family: Asap;
+    text-transform: uppercase;
+    letter-spacing: 0.63px;
+
+}
+
+.commercial__text--cool {
+    color: #c2bbbb;
+}
+
+.commercial__text--minimal {
+    color: #f5c506;
 }
