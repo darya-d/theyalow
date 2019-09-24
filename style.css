@@ -361,18 +361,45 @@ a {
 
 .advantages__list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .advantages__item {
+    width: 340px;
+    min-height: 212px;  padding-top: 140px;
+
+    background-repeat: no-repeat;
+    border-left: 1px solid #D6D6D6;
+    border-right: 1px solid #D6D6D6;
+}
+
+.advantages__item:nth-child(1){
+    background-image: url("./assets/img/cloud-desktop.svg");
+    background-position: 50% 40%;
+}
+
+.advantages__item:nth-child(2){
+    background-image: url("./assets/img/leaf-desktop.svg");
+    background-position: 50% 30%;
+}
+
+.advantages__item:nth-child(3){
+    background-image: url("./assets/img/plane-desktop.svg");
+    background-position: 50% 35%;
+}
+
+.advantages__text {
     font-size: 27px;
     font-weight: 300;
     font-family: "Segoe UI";
+    text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.27px;
-    color: #000000;
 
-    margin-right: 40px;
+    color: #000000;
 }
+
 
 /* * MEDIA */
 .media {
