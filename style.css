@@ -244,22 +244,30 @@ a {
     overflow: hidden;
 }
 
-.big-wrapper {
-    width: 1020px;
+.container {
+    max-width: 1020px;
     margin: 0 auto;
 }
 
 /* * HEADER */
-.wrapper-logo {
-    display: flex;
+.page-header {
+    min-height: 566px;
+    background-image: url("./assets/img/layout-header-desktop.png");
+    background-repeat: no-repeat;
 }
 
-.page-header {
-    background-image: url("./assets/img/layout-header-desktop.png");
-    min-height: 566px;
+.wrapper-logo {
+    display: flex;
+    width: 322px;
+}
+
+.page-header__logo {
+    margin-top: 40px;
 }
 
 .page-header__title {
+    margin-top: 55px;
+
     font-family: "Lucida Sans";
     font-size: 41px;
     font-style: italic;
@@ -271,7 +279,8 @@ a {
 }
 
 .nav {
-    margin-right: 150px;
+    margin-left: 500px;
+    margin-top: -40px;
 }
 
 .nav__list {
@@ -312,7 +321,14 @@ a {
     border: 1px solid red;
 }
 
-.wrapper-commercial {
+.commercial__wrapper {
+    display: flex;
+}
+
+.commercial__video {
+    margin-right: 45px;
+}
+.commercial__wrapper-text {
     border: 1px solid green;
 
     width: 400px;
@@ -334,4 +350,132 @@ a {
 
 .commercial__text--minimal {
     color: #f5c506;
+}
+
+
+/* * ADVANTAGES */
+.advantages {
+    background-image: url("./assets/img/layout-advantages-desktop.png");
+    min-height: 212px;
+}
+
+.advantages__list {
+    display: flex;
+}
+
+.advantages__item {
+    font-size: 27px;
+    font-weight: 300;
+    font-family: "Segoe UI";
+    text-transform: uppercase;
+    letter-spacing: 0.27px;
+    color: #000000;
+
+    margin-right: 40px;
+}
+
+/* * MEDIA */
+.media {
+    background-color: #f5c506;
+    min-height: 509px;
+}
+
+.media__wrapper {
+    display: flex;
+}
+
+.media__title {
+    font-family: "PT Sans";
+    font-size: 37px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.37px;
+
+    color: #ffffff;
+}
+
+.media__wrapper-tweet {
+    width: 329px;
+    min-height: 233px;
+    background-color: #ED9F3E;
+}
+
+.media__wrapper-text {
+    width: 341px;
+    min-height: 233px;
+    background-color: #ED9F3E;
+}
+
+.media__wrapper-img {
+    width: 315px;
+    height: 232px;
+    background-color: #ED9F3E;
+
+    margin-right: 35px;
+}
+
+.media__text {
+    font-size: 29px;
+    font-weight: 300;
+    line-height: 38px;
+    font-family: "Segoe WP";
+    letter-spacing: 0.29px;
+
+    color: #ffffff;
+}
+
+
+/* * DEVICES */
+.devices {
+    background-color: #4C4C4C;
+    min-height: 499px; 
+}
+
+.devices__wrapper-img {
+    width: 545px;
+}
+.devices__title {
+    font-size: 43px;
+    font-weight: 400;
+    font-family: "PT Sans";
+    text-transform: uppercase;
+    letter-spacing: 0.43px;
+    text-align: center;
+
+    color: #f5c506;
+}
+
+.devices__list {
+    margin-left: 600px;
+    width: 400px;
+}
+
+.devices__item {
+font-size: 22px;
+font-weight: 400;
+font-family: "Open Sans";
+letter-spacing: 0.22px;
+
+color: #a9a9a7;
+}
+
+
+/* * FOOTER */
+.page-footer {
+    background-color: #4C4C4C;
+}
+
+.page-footer__wrapper-logo {
+    display: flex;
+}
+
+.page-footer__title {
+    font-size: 29px;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 0.29px;
+    font-family: "Lucida Sans";
+
+    color: #ffffff;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.42);
 }
