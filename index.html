@@ -10,76 +10,108 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="big-wrapper">
+    <!-- <div class="big-wrapper"> -->
         <!-- * HEADER -->
         <header class="page-header">
-            <div class="wrapper-logo">
-                <img class="page-header__logo" src="./assets/img/logo-full.svg" width="83" height="83" alt="logo">
-                <h1 class="page-header__title">The Yalow</h1>
+            <div class="container">
+                <div class="wrapper-logo">
+                    <img class="page-header__logo" src="./assets/img/logo-full.svg" width="83" height="83" alt="logo">
+                    <h1 class="page-header__title">The Yalow</h1>
+                </div>
+                <nav class="nav">
+                    <!-- ? делать на флексах -->
+                    <ul class="nav__list">
+                        <li class="nav__item"> 
+                            <a class="nav__link" href="#">About us</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Services</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="nav">
-                <!-- ? делать на флексах -->
-                <ul class="nav__list">
-                    <li class="nav__item"> 
-                        <a class="nav__link" href="#">About us</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#">Services</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </nav>
         </header>
 
         <!-- * MAIN -->
         <main class="page-main">
             <!-- * commercial -->
             <section class="commercial">
-                <h2 class="visually-hidden">Commercial video about The Yelow company</h2>
-                <video class="commercial_video" src="#"  poster="./assets/img/video-parrots-desktop.png" controls></video>
-                <div class="wrapper-commercial">
-                    <span class="commercial__text commercial__text--cool">The cool</span>
-                    <span class="commercial__text commercial__text--minimal">The minimal</span>
+                <div class="container">
+                    <div class="commercial__wrapper">
+                        <h2 class="visually-hidden">Commercial video about The Yelow company</h2>
+                        <video class="commercial__video" src="#"  poster="./assets/img/video-parrots-desktop.png" controls></video>
+                        <div class="commercial__wrapper-text">
+                            <span class="commercial__text commercial__text--cool">The cool</span>
+                            <span class="commercial__text commercial__text--minimal">The minimal</span>
+                        </div>
+                    </div>
                 </div>
+
             </section>
 
             <!-- * advantages -->
             <section class="advantages">
-                <h2 class="visually-hidden">Advantages</h2>
-                <!-- ? делать на флексах -->
-                <ul class="advantages__list">
-                    <li class="advantages__item">Better design</li>
-                    <li class="advantages__item">Customise</li>
-                    <li class="advantages__item">It's free</li>
-                </ul>
+                <div class="container">
+                    <h2 class="visually-hidden">Advantages</h2>
+                    <!-- ? делать на флексах -->
+                    <ul class="advantages__list">
+                        <li class="advantages__item">Better design</li>
+                        <li class="advantages__item">Customise</li>
+                        <li class="advantages__item">It's free</li>
+                    </ul>
+                </div>
             </section>
             
             <!-- * media -->
             <section class="media">
-                <h2 class="media_title">Lorem ipsum dolor sit amet</h2>
-                <p class="media_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</p>
+                <div class="container">
+                    <h2 class="media__title">Lorem ipsum dolor sit amet</h2>
+                    <div class="media__wrapper">
+                        <div class="media__wrapper-text">
+                            <p class="media__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</p>
+                        </div>
+                        <div class="media__wrapper-img">
+                            <img src="./assets/img/monkey-desktop.png" alt="image of monkey">
+                        </div>
+                        <div class="media__wrapper-tweet">
+                            <img class="media__img-tweet" src="./assets/img/twitter-bird-desktop.svg" alt="twitter bird">
+                        </div>
+                    </div>
+                </div>
             </section>
             
             <!-- * Devices -->
             <section class="devices">
-                <h2 class="devices_title">Lorem ipsum dolor sit amet</h2>
-                <ul class="devices_list">
-                    <li class="devices_item">Sed ut perspiciatis unde omnis</li>
-                    <li class="devices_item">Lorem ipsum dolor sit amet, consectetur adipisicing </li>
-                    <li class="devices_item">Sed ut perspiciatis unde omnis</li>
-                    <li class="devices_item">Lorem ipsum dolor sit amet, consectetur adipisicing </li>
-                </ul>
+                <div class="container">
+                    <h2 class="devices__title">Lorem ipsum dolor sit amet</h2>
+                    <div class="devices__wrapper-img">
+                        <img src="./assets/img/desktop-img-desktop.png" alt="desktop">
+                        <img src="./assets/img/tablet-img-desktop.png" alt="tablet">
+                        <img src="./assets/img/mobile-img-desktop.png" alt="mobile">
+                    </div>
+                    <ul class="devices__list">
+                        <li class="devices__item">Sed ut perspiciatis unde omnis</li>
+                        <li class="devices__item">Lorem ipsum dolor sit amet, consectetur adipisicing </li>
+                        <li class="devices__item">Sed ut perspiciatis unde omnis</li>
+                        <li class="devices__item">Lorem ipsum dolor sit amet, consectetur adipisicing </li>
+                    </ul>
+                </div>
             </section>
         </main>
 
         <!-- * FOOTER -->
         <footer class="page-footer">
-            <img class="page-footer_logo" src="./assets/images/logo.svg" alt="logo">
-            <!-- ? Could it be two h1 ? -->
-            <h1 class="page-footer_title">The Yalow</h1>
+            <div class="container">
+                <div class="page-footer__wrapper-logo">
+                    <img class="page-footer__logo" src="./assets/img/logo-full.svg" alt="logo">
+                    <!-- ? Could it be two h1 ? -->
+                    <h1 class="page-footer__title">The Yalow</h1>
+                </div>
+            </div>
         </footer>
-    </div>
+    <!-- </div> -->
 </body>
 </html>
