@@ -249,12 +249,20 @@ a {
     margin: 0 auto;
 }
 
-/* * HEADER */
-.page-header {
+.wrapper-background {
     min-height: 566px;
+    padding-top: 200px;
+
     background-image: url("./assets/img/layout-header-desktop.png");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+/* * HEADER */
+.page-header {
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 
 .wrapper-logo {
@@ -584,10 +592,46 @@ a {
     min-height: 499px; 
 }
 
-.devices__wrapper-img {
-    width: 545px;
+.devices__wrapper {
+    display: flex;
 }
+
+.devices__wrapper-img {
+    position: relative;
+    margin-right: 60px;
+}
+
+.devices__wrapper-img::before {
+    content: "Its 100% Free";
+
+    position: absolute;
+    width: 116px;
+    height: 116px;
+    top: -30px;
+    left: -5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #ffffff;
+    font-family: "PT Sans";
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.51px;
+    text-align: center;
+
+    border-radius: 50%;
+    background-color: #f5c506;
+}
+
+.devices__wrapper-img img {
+    margin-right: 15px;
+}
+
 .devices__title {
+    padding: 50px 0;
+
     font-size: 43px;
     font-weight: 400;
     font-family: "PT Sans";
@@ -599,23 +643,42 @@ a {
 }
 
 .devices__list {
-    margin-left: 600px;
     width: 400px;
 }
 
 .devices__item {
-font-size: 22px;
-font-weight: 400;
-font-family: "Open Sans";
-letter-spacing: 0.22px;
+    position: relative;
 
-color: #a9a9a7;
+    font-size: 22px;
+    line-height: 1.6;
+    font-weight: 400;
+    font-family: "Open Sans";
+    letter-spacing: 0.22px;
+    word-wrap: break-word;
+
+    color: #a9a9a7;
 }
 
+.devices__item::before {
+    content: "";
+
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 12px;
+    left: -10%; 
+
+    border-radius: 12px;
+    background-color: #f5c506;
+}
 
 /* * FOOTER */
 .page-footer {
+    min-height: 64px;
+    padding: 20px 0;
+
     background-color: #4C4C4C;
+    box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.75);
 }
 
 .page-footer__wrapper-logo {
