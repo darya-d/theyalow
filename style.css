@@ -251,7 +251,8 @@ a {
 
 .wrapper-background {
     min-height: 566px;
-    padding-top: 200px;
+    padding-top: 168px;
+    padding-left: 19px;
 
     background-color: #413717;
     background-image: url("./assets/img/layout-header-desktop.png");
@@ -272,11 +273,12 @@ a {
 }
 
 .page-header__logo {
-    margin-top: 40px;
+    margin-top: 28px;
 }
 
 .page-header__title {
-    margin-top: 55px;
+    padding-top: 43px;
+    padding-left: 4px;
 
     font-family: "Lucida Sans";
     font-size: 41px;
@@ -289,7 +291,7 @@ a {
 }
 
 .nav {
-    margin-left: 500px;
+    margin-left: 567px;
     margin-top: -40px;
 }
 
@@ -299,10 +301,10 @@ a {
     justify-content: space-around;
     align-items: center;
 
-    width: 453px;
+    max-width: 453px;
     min-height: 41px;
     background-color: #f5c506;
-    box-shadow: -5px -6px 0 rgba(159, 133, 43, 0.27), -10px -10px 0 rgba(116, 104, 31,  0.27);
+    box-shadow: -5px -6px 0 rgba(159, 133, 43, 0.27), -9px -8px 0 rgba(116, 104, 31,  0.27);
 }
 
 .nav__item {
@@ -313,10 +315,18 @@ a {
     letter-spacing: 0.17px;
 }
 
+.nav__item:nth-child(1) {
+    padding-left: 20px;
+}
+
+.nav__item:nth-child(3) {
+    padding-right: 3px;
+}
+
 .nav__icon {
     display: inline-block;
     vertical-align: middle;
-    padding: 12px 15px;
+    padding: 11px 11px;
 }
 
 .nav__icon--person {
@@ -329,6 +339,7 @@ a {
 
 .nav__icon--message {
     background: url("./assets/img/message-desktop.svg") no-repeat;
+    width: 26px; 
 }
 
 .nav__link {
@@ -349,7 +360,7 @@ a {
 }
 
 .video {
-    margin-right: 45px;
+    margin-right: 20px;
 }
 
 .video__btn {
@@ -364,12 +375,14 @@ a {
 
 .video__btn--next {
     right: 0;
+    top: 300px;
     background: url("./assets/img/array-right-desktop.svg") no-repeat center;
     background-color: #f5c506;
 }
 
 .video__btn--prev {
     left: 0;
+    top: 300px;
     background: url("./assets/img/array-left-desktop.svg") no-repeat center;
     background-color: #f5c506;
     opacity: 0.71;
@@ -377,6 +390,8 @@ a {
 
 .commercial__wrapper-text {
     width: 400px;
+    padding-top: 63px;
+
     text-align: center; 
 }
 
@@ -386,14 +401,19 @@ a {
     font-family: Asap;
     text-transform: uppercase;
     letter-spacing: 0.63px;
-
 }
 
 .commercial__text--cool {
+    display: inline-block;
+    margin-bottom: -16px;
+
     color: #c2bbbb;
 }
 
 .commercial__text--minimal {
+    display: inline-block;
+    padding-left: 10px;
+
     color: #f5c506;
 }
 
