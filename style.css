@@ -253,6 +253,7 @@ a {
     min-height: 566px;
     padding-top: 200px;
 
+    background-color: #413717;
     background-image: url("./assets/img/layout-header-desktop.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -305,13 +306,29 @@ a {
 }
 
 .nav__item {
-    margin-right: 30px;
-
     font-size: 17px;
     font-weight: 400;
     font-family: "Segoe WP";
     text-transform: uppercase;
     letter-spacing: 0.17px;
+}
+
+.nav__icon {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 12px 15px;
+}
+
+.nav__icon--person {
+    background: url("./assets/img/person-desktop.svg") no-repeat;
+}
+
+.nav__icon--tool {
+    background: url("./assets/img/tool-desktop.svg") no-repeat;
+}
+
+.nav__icon--message {
+    background: url("./assets/img/message-desktop.svg") no-repeat;
 }
 
 .nav__link {
@@ -383,6 +400,7 @@ a {
 
 /* * ADVANTAGES */
 .advantages {
+    background-color: #F7F7F7;
     background-image: url("./assets/img/layout-advantages-desktop.png");
     min-height: 212px;
 }
@@ -436,6 +454,8 @@ a {
 .media {
     background-color: #f5c506;
     min-height: 509px;
+    background: url("./assets/img/layout-media-desktop.png") no-repeat;
+    background-size: cover;
 }
 
 .media__wrapper {
@@ -618,6 +638,8 @@ a {
 .devices {
     background-color: #4C4C4C;
     min-height: 499px; 
+    background: url("./assets/img/layout-main3-desktop.png") no-repeat;
+    background-size: cover;
 }
 
 .devices__wrapper {
