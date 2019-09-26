@@ -440,36 +440,47 @@ a {
     background-repeat: no-repeat;
     border-right: 1px solid #D6D6D6;
 }
-.advantages__item:first-child {
-    border-left: 1px solid #D6D6D6;
-}
 
 .advantages__item:nth-child(1){
     background-image: url("./assets/img/cloud-desktop.svg");
-    background-position: 50% 40%;
+    background-position: 48.7% 44%;
+    border-left: 1px solid #D6D6D6;
 }
 
 .advantages__item:nth-child(2){
     background-image: url("./assets/img/leaf-desktop.svg");
-    background-position: 50% 30%;
+    background-position: 53.5% 31%;
 }
 
 .advantages__item:nth-child(3){
     background-image: url("./assets/img/plane-desktop.svg");
-    background-position: 50% 35%;
+    background-position: 46% 41%;
 }
 
 .advantages__text {
+    padding-left: 19px;
+    padding-top: 3px;
+
     font-size: 27px;
     font-weight: 300;
     font-family: "Segoe UI";
-    text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.27px;
 
     color: #000000;
 }
 
+.advantages__text--design {
+    padding-left: 86px;
+}
+
+.advantages__text--custom {
+    padding-left: 111px;
+}
+
+.advantages__text--free {
+    padding-left: 107px;
+}
 
 /* * MEDIA */
 .media {
