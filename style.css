@@ -258,6 +258,7 @@ a {
     background-image: url("./assets/img/layout-header-desktop.png");
     background-repeat: no-repeat;
     background-size: cover;
+    box-shadow: inset 0px -3px 5px #6B6425; 
 }
 
 /* * HEADER */
@@ -472,10 +473,11 @@ a {
 
 /* * MEDIA */
 .media {
-    background-color: #f5c506;
     min-height: 509px;
     background: url("./assets/img/layout-media-desktop.png") no-repeat;
     background-size: cover;
+    background-color: #f5c506;
+    box-shadow: inset 0px 2px 5px 0px #BB9B34; 
 }
 
 .media__wrapper {
