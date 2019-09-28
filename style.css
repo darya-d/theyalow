@@ -369,13 +369,14 @@ a {
 }
 
 .video__btn {
+    position: absolute;
+
     width: 32px;
     height: 57px;
+    top: 40%;
     
     outline: none;
-    position: absolute;
-    top: 40%;
-    z-index: 2; 
+    border: 0;
 }
 
 .video__btn--next {
@@ -768,7 +769,7 @@ a {
 }
 
 .devices__item:first-child {
-    margin-bottom: 23px;
+    margin-bottom: 21px;
 }
 
 .devices__item:nth-child(2) {
@@ -811,7 +812,7 @@ a {
 .page-footer__title {
     margin-top: 11px;
     margin-left: 5px;
-    
+
     font-size: 29px;
     font-style: italic;
     text-transform: uppercase;
