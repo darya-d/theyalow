@@ -795,7 +795,6 @@ a {
 /* * FOOTER */
 .page-footer {
     min-height: 64px;
-    padding: 20px 0;
 
     background-color: #4C4C4C;
     box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.75);
@@ -805,7 +804,14 @@ a {
     display: flex;
 }
 
+.page-footer__logo {
+    margin-top: 4px;
+}
+
 .page-footer__title {
+    margin-top: 11px;
+    margin-left: 5px;
+    
     font-size: 29px;
     font-style: italic;
     text-transform: uppercase;
