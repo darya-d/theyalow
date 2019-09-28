@@ -522,16 +522,19 @@ a {
     background-color: #ED9F3E;
 }
 
-.media__wrapper-text::before {
-    content: "";
-
+.media__button-text {
     position: absolute;
     width: 11px;
     height: 11px;
     bottom: 13px;
-    right: 14px;
+    right: 13px;
 
-    background-image: url('/assets/img/plus.svg');
+    border: 0;
+    background: url('/assets/img/plus.svg') no-repeat center;
+}
+
+.media__button-text:active {
+    opacity: 0.5;
 }
 
 .media__text {
@@ -598,16 +601,19 @@ a {
     color: #ffffff; 
 }
 
-.media__wrapper-tweet::before {
-    content: "";
-
+.media__button-tweet {
     position: absolute;
     width: 11px;
     height: 11px;
     bottom: 13px;
-    right: 9px;
+    right: 8px;
 
-    background-image: url('/assets/img/plus.svg');
+    border: 0;
+    background: url('/assets/img/plus.svg') no-repeat center;
+}
+
+.media__button-tweet:active {
+    opacity: 0.5;
 }
 
 .media__img-tweet {
