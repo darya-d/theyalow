@@ -301,7 +301,7 @@ a {
   max-width: 453px;
 
   background-color: #f5c506;
-  box-shadow: -5px -6px 0 rgba(159, 133, 43, 0.27), -9px -8px 0 rgba(116, 104, 31,  0.27);
+  box-shadow: -5px -6px 0 rgb(245, 197, 6, 0.27), -9px -8px 0 rgb(245, 197, 6, 0.27);
 }
 
 .nav__item {
@@ -562,14 +562,14 @@ a {
   margin-bottom: -16px;
   margin-left: 35px;
 
-  color: #c2bbbb;
+  color: #f5c506;
 }
 
 .commercial__text--minimal {
   display: inline-block;
   margin-left: 30px;
 
-  color: #f5c506;
+  color: #ffffff;
 }
 
 /* ! media */
