@@ -557,13 +557,14 @@ a {
 .commercial__text--cool {
     display: inline-block;
     margin-bottom: -16px;
+    margin-left: 35px;
 
     color: #c2bbbb;
 }
 
 .commercial__text--minimal {
     display: inline-block;
-    padding-left: 10px;
+    margin-left: 30px;
 
     color: #f5c506;
 }
@@ -648,11 +649,57 @@ a {
 }
 
 .advantages__text--free {
-    padding-left: 107px;
+    padding-left: 113px;
 }
 
 /* ! media */
 @media (max-width: 640px) {
+    .advantages {
+        min-height: 180px;
+        max-width: 640px;
+    }
+    
+    .advantages__item {
+        max-width: 210px;
+        min-height: 179px;
+
+        padding-top: 110px;
+    }
+    
+    .advantages__item:nth-child(1){
+        background-image: url("./assets/img/cloud-mobile.svg");
+        background-position: 37.5% 28%;
+        border-left: none;
+    }
+    
+    .advantages__item:nth-child(2){
+        background-image: url("./assets/img/leaf-mobile.svg");
+        background-position: 56.5% 26%;
+    }
+    
+    .advantages__item:nth-child(3){
+        background-image: url("./assets/img/plane-mobile.svg");
+        background-position: 47% 26%;
+    }
+    
+    .advantages__text {
+        padding: 0;
+    
+        font-size: 23px;
+        letter-spacing: 0.23px;
+    }
+    
+    .advantages__text--design {
+        padding-left: 16px;
+    }
+    
+    .advantages__text--custom {
+        padding-left: 55px;
+    }
+    
+    .advantages__text--free {
+        padding-left: 65px;
+    }
 }
 
 
