@@ -392,7 +392,8 @@ a {
 
     .wrapper-background {
         min-height: 389px;
-        padding-top: 100px;
+        padding-top: 62px;
+        padding-left: 0;
     
         background-color: #413717;
         background-image: none;
@@ -412,7 +413,7 @@ a {
     .wrapper-logo {
         width: 186px;
         height: 62px;
-        background-image: #575757;
+        background-color: #575757;
     }
     
     .page-header__logo {
@@ -465,11 +466,6 @@ a {
         width: 147px;
     }
     
-    .nav__link {
-        color: #9b7d08;
-        position: relative;
-    }
-    
     .nav__link--person::after {
         content: "";
         
@@ -502,14 +498,6 @@ a {
         position: absolute;
         background: url("./assets/img/message-mobile.svg") no-repeat;
     }
-    
-    .nav__link:hover {
-        color: #685406;
-    }
-    
-    .nav__link:active {
-        opacity: 0.3;
-    }
 }
 
 /* * COMMERCIAL */
@@ -519,6 +507,10 @@ a {
 
 .video {
     margin-right: 20px;
+}
+
+.video-mobile {
+    display: none;
 }
 
 .video__btn {
@@ -579,6 +571,18 @@ a {
 /* ! media */
 @media (max-width: 640px) {
     .commercial__wrapper-text {
+        display: none;
+    }
+
+    .video {
+        display: none;
+    }
+    
+    .video-mobile {
+        display: block;
+    }
+
+    .video__btn {
         display: none;
     }
 }
