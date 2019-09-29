@@ -943,10 +943,11 @@ a {
     }
 
     .media__text {
-        padding-top: 10px;
+        padding-top: 18px;
         padding-left: 26px;
         padding-right: 30px;
         letter-spacing: 0.29px;
+        line-height: 33.31px;
     }
 
     .media__wrapper-img {  
