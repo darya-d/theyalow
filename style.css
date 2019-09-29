@@ -557,6 +557,7 @@ a {
     border: 0;
     outline: none;
     background: url('/assets/img/plus.svg') no-repeat center;
+    cursor: pointer;
 }
 
 .media__text {
@@ -633,6 +634,7 @@ a {
     border: 0;
     outline: none;
     background: url('/assets/img/plus.svg') no-repeat center;
+    cursor: pointer;
 }
 
 .media__button-text:hover,
