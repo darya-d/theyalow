@@ -655,8 +655,11 @@ a {
 /* ! media */
 @media (max-width: 640px) {
     .advantages {
-        min-height: 180px;
+        min-height: 0;
+        max-height: 165px;
         max-width: 640px;
+
+        box-shadow: -5px -6px 0 rgba(159, 133, 43, 0.27), -9px -8px 0 rgba(116, 104, 31,  0.27);
     }
     
     .advantages__item {
@@ -669,12 +672,13 @@ a {
     .advantages__item:nth-child(1){
         background-image: url("./assets/img/cloud-mobile.svg");
         background-position: 37.5% 28%;
-        border-left: none;
+        border: none;
     }
     
     .advantages__item:nth-child(2){
         background-image: url("./assets/img/leaf-mobile.svg");
         background-position: 56.5% 26%;
+        border: none;
     }
     
     .advantages__item:nth-child(3){
@@ -815,6 +819,10 @@ a {
     color: #ffffff; 
 }
 
+.wrapper__tweet-messages {
+    display: none;
+}
+
 .media__button-tweet {
     position: absolute;
     width: 11px;
@@ -903,6 +911,168 @@ a {
 
 /* ! media */
 @media (max-width: 640px) {
+    .media {
+        min-height: 508px;
+    
+        background-color: #ffffff;
+        background: none;
+        background-size: cover;
+        box-shadow: none; 
+    }
+    
+    .media__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+    
+    .media__title {
+        display: none;
+    }
+    
+    .media__wrapper-text {
+        max-width: 299px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 5px;
+    }
+    
+    .media__button-text {
+        bottom: 17px;
+        right: 11px;
+    }
+
+    .media__text {
+        padding-top: 10px;
+        padding-left: 26px;
+        padding-right: 30px;
+        letter-spacing: 0.29px;
+    }
+
+    .media__wrapper-img {  
+        width: 270px;
+        height: 232px;
+        margin-left: -2px;
+        margin-top: 5px;
+        background-color: #ED9F3E;
+    }
+    
+    .media__wrapper-tweet {
+        display: flex;
+        position: relative;
+        margin-top: 10px;
+    
+        width: 640px;
+        height: 233px;
+        background-color: #F5C746;
+    }
+    
+    .media__wrapper-tweet::after {
+        display: none;
+    }
+
+    .media__button-tweet {
+        display: none;
+    }
+
+    .media__img-tweet {
+        margin-top: 58px;
+        margin-left: 86px;
+    }
+
+    .wrapper__tweet-messages {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .tweet-message__text {
+        position: absolute;
+        right: 70px;
+
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 1.3;
+        letter-spacing: 0.13px;
+        color: #8f8e8e;
+    }
+
+    .tweet-message__img {
+        position: relative;
+        margin-left: 78px;
+    }
+
+    .tweet-message__one .tweet-message__img {
+        margin-top: 22px;
+    }
+
+    .tweet-message__one .tweet-message__text {
+        top: 30px;
+    }
+
+    .tweet-message__two .tweet-message__img {
+        margin-top: 8px;
+        opacity: 0.7;
+    }
+
+    .tweet-message__two .tweet-message__text {
+        top: 86px;
+    }
+
+    .tweet-message__three .tweet-message__img {
+        margin-top: 7px;
+        opacity: 0.6;
+    }
+
+    .tweet-message__three .tweet-message__text {
+        top: 142px;
+    }
+
+    .tweet-message__textarea {
+    width: 270px;
+    height: 29px;
+    margin-left: 91px;
+    margin-top: 7px;
+
+    box-shadow: inset 3px 4px 5px rgba(0, 0, 0, 0.11);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    background-color: #ffffff;
+    }
+
+    .textarea__space {
+        position: relative;
+    }
+
+    .textarea__button {
+        position: absolute;
+        margin-left: 201px;
+        margin-top: -1px;
+        width: 68px;
+        height: 29px;
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: 0.15px;
+        border-radius: 0 10px 10px 0;
+
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.16) 0%, rgba(255, 255, 255, 0.16) 100%);
+        background-color: #E5AA3E;
+        color: #ffffff;
+        outline: none;
+        border: 0;
+        cursor: pointer;
+    }
+
+    .textarea__button:active {
+        opacity: 0.5;
+    }
+
+    .calendar {
+        display: none;
+    }
+
+    .scroll {
+        display: none;
+    }
 }
 
 

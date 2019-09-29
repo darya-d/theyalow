@@ -91,8 +91,30 @@
               <div class="media__video-btn"></div>
             </div>
             <div class="media__wrapper-tweet">
-              <img class="media__img-tweet" src="./assets/img/twitter-bird-desktop.svg" alt="twitter bird">
+              <picture>
+                <source media="(max-width: 640px)" srcset="./assets/img/twitter-bird-mobile.svg">
+                <img class="media__img-tweet" src="./assets/img/twitter-bird-desktop.svg" alt="twitter bird">
+              </picture>
               <button class="media__button-tweet" type="button"></button>
+              <div class="wrapper__tweet-messages">
+                <div class="tweet-message__one">
+                  <img class="tweet-message__img" src="./assets/img/tweet-mobile.png" alt="">
+                  <p class="tweet-message__text">Daily Mobile UI Design Inspiration #1<br>via @cssauthor</p>
+                  <p class="tweet-message__text"></p>
+                </div>
+                <div class="tweet-message__two">
+                  <img class="tweet-message__img" src="./assets/img/tweet-mobile.png" alt="">
+                  <p class="tweet-message__text">Daily Mobile UI Design Inspiration #1<br>via @cssauthor</p>
+                </div>
+                <div class="tweet-message__three">
+                  <img class="tweet-message__img" src="./assets/img/tweet-mobile.png" alt="">
+                  <p class="tweet-message__text">Daily Mobile UI Design Inspiration #1<br>via @cssauthor</p>
+                </div>
+                <div class="tweet-message__textarea">
+                  <div class="textarea__space"></div>
+                  <button type="button" class="textarea__button">Tweet</button>
+                </div>
+              </div>
             </div>
           </div>
           <div class="calendar">
