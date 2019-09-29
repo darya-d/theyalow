@@ -1259,6 +1259,8 @@ a {
 
 .page-footer__logo {
     margin-top: 4px;
+    width: 55px;
+    height: 55px;
 }
 
 .page-footer__title {
@@ -1277,5 +1279,30 @@ a {
 
 /* ! media */
 @media (max-width: 640px) {
+    .page-footer {
+        min-height: 45px;
+    
+        background-color: #4C4C4C;
+        box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.75);
+    }
+    
+    .page-footer__wrapper-logo {
+        display: flex;
+    }
+    
+    .page-footer__logo {
+        margin-top: 7px;
+        margin-left: 66px;
+        width: 31px;
+        height: 31px;
+    }
+    
+    .page-footer__title {
+        margin-top: 12px;
+        margin-left: 7px;
+    
+        font-size: 17px;
+        text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.42);
+    }
 }
 
